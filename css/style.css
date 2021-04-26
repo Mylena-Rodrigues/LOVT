@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box; /*Não alterará nada fora do elemento que recebe as alterações*/
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #ffff;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    max-width: 1500px;
+    box-shadow: 0 3px 20px  rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header button{
+    border: none;
+    background-color: #ffff;
+}
+
+
+
+main{
+    margin: 100px 100px 0px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.banner{
+  width: 100%;
+  margin-bottom: 20px; 
+}
+
+main section.banner .img-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+
+.arrow {
+    background: rgba(141, 141, 141, 0.4);
+    padding: 20px;
+}
+
+
+.ofertas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.ofertas img{
+    width: 100%;
+    max-height: 260px;
+}
+
+.oferta{
+    max-width: 456px;
+    max-height: 450px;
+    background-color: #EEEEEE;
+}
+
+.ofertas .info-oferta .status .valor{
+    color: #888888;
+}
+.ofertas .info-oferta .status span{
+    font-family: 'Ropa Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #FFFFFF;
+}
+
+.ofertas .info-oferta .status .new{
+    background-color: #51D275;
+}
+.ofertas .info-oferta .status .sale{
+    background-color: #DC9730;
+}
+
+.ofertas p{
+    margin-top: 0;
+    text-align: justify;
+    padding: 5px 10px;
+}
+
+
+.ofertas .info-oferta .status{
+    padding: 0px 15px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.estilos{
+    margin-bottom: 57px;
+    padding: 0;
+    width: 100%;
+    max-width: 1125px;
+}
+
+.estilos article{
+    height: 90px;
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 13px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.estilos h2{
+    margin-top: 100px;
+    color: #888888;
+    text-align: center;
+}
+
+.estilos h3{
+font-family: 'Ropa Sans';
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+color: #FFFFFF;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+display: flex;
+align-self: center;
+}
+
+footer{
+    background-color: #333333;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.localizacao{
+    width: 300px;
+}
+
+.localizacao img{
+    width: 100%;
+}
+.informacoes{
+    display: inline-block;
+    color: #ffff;  
+}
+
+.informacoes p{
+    padding: 0;
+    margin-bottom: 0.8px;
+}
+
+.social_media{
+    margin-top: 30px;
+    padding: 0;
+}
+
+.social_media a img{
+    width: 25px;
+    margin-right: 40px;
+}
+
+@media (max-width: 800px){
+  .ofertas{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .oferta{
+      margin-top: 30px;;
+  }
+}
